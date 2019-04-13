@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:layout_width="match_parent">
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@null"
+        android:layout_weight="1"
+        android:layout_marginTop="-50dp"
+        android:layout_height="fill_parent"
+        android:layout_width="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="4dp"
+        >
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imggoal"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_goal"
+                    />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_toRightOf="@+id/imggoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/darker_gray"
+                android:hint="@string/hint_new_goal">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edtnewgoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    app:backgroundTint="@android:color/white"/>
+            </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/delivery_address"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_centerVertical="true"
+                android:background="#cfcfcf" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/targetamount"
+                    android:src="@mipmap/targetamount"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_toRightOf="@+id/targetamount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:hint="@string/hint_target_amount">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edttargetamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        app:backgroundTint="@android:color/white"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

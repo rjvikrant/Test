@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="4dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                >
+
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgloan"
+                    android:scaleType="center"
+                    android:src="@mipmap/goal_orange"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_loan_spinner"
+                    android:layout_toRightOf="@+id/imgloan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_insurance_titile_spinner"
+                        android:layout_marginTop="5dp"/>
+
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:layout_marginTop="3dp"
+                        android:id="@+id/spinner_loan"
+                        android:layout_marginRight="5dp"
+                        android:entries="@array/array_loan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        app:backgroundTint="@android:color/darker_gray"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                >
+
+
+                <ImageView
+                    android:layout_toRightOf="@+id/ll_loan_spinner"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgemi"
+                    android:scaleType="center"
+                    android:src="@mipmap/goal_purple"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_toRightOf="@+id/imgemi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:hint="@string/hint_premium">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edt_emi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        app:backgroundTint="@android:color/white"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imggoal"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/goal_greenish"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_toRightOf="@+id/imggoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/darker_gray"
+                android:hint="@string/sum_assured">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_outstanding_loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    app:backgroundTint="@android:color/white"/>
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imggoal1"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/balance_purple"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_toRightOf="@+id/imggoal1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/darker_gray"
+                android:hint="@string/tenure_of_insurance">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_tenure_of_loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    app:backgroundTint="@android:color/white"/>
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <Button
+            android:layout_gravity="end"
+            android:textColor="@android:color/holo_blue_bright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/btn_delete"
+            android:text="@string/btn_delete"
+            />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

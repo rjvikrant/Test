@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MyApplicationChoiceTechLab</string>
+    <string name="hint_new_goal">Enter New Goal</string>
+    <string name="hint_target_amount">Enter Target Amount</string>
+    <string name="btn_continue">CONTINUE</string>
+    <string name="txt_loan_titile">Loan Details</string>
+    <string name="txt_insurance_titile">Insurance Details</string>
+    <string name="btn_delete">Delete</string>
+    <string name="txt_loan_titile_spinner">Loan</string>
+    <string name="txt_insurance_titile_spinner">Insurance</string>
+    <string name="hint_premium">Premium</string>
+    <string name="sum_assured">Sum Assured</string>
+    <string name="tenure_of_insurance">Tenure Of Insurance</string>
+    <string name="emi">EMI</string>
+    <string name="outstanding_loan">Outstanding Loan</string>
+    <string name="tenure_of_loan">Outstanding Tenure Of Loan</string>
+
+
+    <string-array name="array_loan">
+    <item>Car</item>
+    <item>Home</item>
+</string-array>
+
+    <string-array name="array_insurance">
+        <item>Car</item>
+        <item>Home</item>
+        <item>Life</item>
+    </string-array>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+  <!--  <LinearLayout android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1">-->
+
+    <RelativeLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+       >
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt1"
+            android:text="@string/txt_loan_titile"
+            />
+
+        <ImageButton
+           android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/additem"
+            android:src="@mipmap/add_item"
+            android:background="@null"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/loan_recycler"
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+ <!--   </LinearLayout>-->
+
+
+    <!--<LinearLayout android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1">-->
+
+        <RelativeLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt2"
+                android:text="@string/txt_insurance_titile"
+                />
+
+            <ImageButton
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/additem2"
+                android:src="@mipmap/add_item"
+                android:background="@null"
+                />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/insurance_recycler"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+  <!--  </LinearLayout>-->
+
+    </LinearLayout>
+</ScrollView>

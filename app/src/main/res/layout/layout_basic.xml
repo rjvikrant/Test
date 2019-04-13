@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <include layout="@layout/layout_image" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginBottom="150dp"
+            android:layout_marginRight="15dp"
+            app:backgroundTint="@color/transparent"
+            android:tint="@android:color/white"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <include layout="@layout/card_view_main" />
+
+
+        <Button
+            android:id="@+id/btncontinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textColor="@android:color/white"
+            android:background="@drawable/background"
+            android:text="@string/btn_continue"/>
+
+</android.support.design.widget.CoordinatorLayout>
